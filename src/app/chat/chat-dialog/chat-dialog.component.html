@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
+<h1>PIZZA CHAT BOT</h1>
+
+<ng-container *ngFor="let message of messages | async">
+
+    <dir class="message" [ngClass]="{ '.from': message.sentBy === 'bot', '.to': message.sentBy === 'user'}">
+      <tr ng-repeat="user in users" background-color: blue>
+      {{ message.content }}
+      </tr>
+    </dir>
+
+</ng-container>
+
+
+<label for="nameField">Your Message</label>
+
+<input [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text"><br>
+
+<button (click)="sendMessage()">Send</button>
