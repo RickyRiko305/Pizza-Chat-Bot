@@ -1,0 +1,23 @@
+{
+  "id": "945c3ea0-ae7c-40d3-b810-1f0715258508",
+  "name": "sauce",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "Italian",
+      "synonyms": [
+        "italian"
+      ]
+    },
+    {
+      "value": "simple",
+      "synonyms": [
+        "simple"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false,
+  "isRegexp": false
+}

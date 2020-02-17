@@ -1,0 +1,316 @@
+{
+  "id": "a8a87c31-badf-45a1-b154-afcb98a2294d",
+  "name": "Order",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "af8165cc-d18d-401f-b311-58c18dee0b1a",
+          "required": true,
+          "dataType": "@type",
+          "name": "type",
+          "value": "$type",
+          "prompts": [
+            "Hi ! what kind of pizza you are looking for today? veg or non-veg?",
+            "what type of pizza are you in the mood for? veg/non-veg?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": true
+        },
+        {
+          "id": "7d406e04-ecfb-45b4-a523-066449e9f16a",
+          "required": true,
+          "dataType": "@size",
+          "name": "size",
+          "value": "$size",
+          "prompts": [
+            "what size you want?",
+            "what should be the size of your pizza?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": true
+        },
+        {
+          "id": "6245604b-76db-4375-b6ff-e76e700026f7",
+          "required": true,
+          "dataType": "@crust",
+          "name": "crust",
+          "value": "$crust",
+          "prompts": [
+            "what about the crust ? thin or thick?",
+            "thin crust or thick crust?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": true
+        },
+        {
+          "id": "7645909e-17c2-4c15-8ba9-dfcc42e4bf51",
+          "required": true,
+          "dataType": "@topping",
+          "name": "topping",
+          "value": "$topping",
+          "prompts": [
+            "do you want to add addition topping? onions, Sausage, Mushrooms, olives or Bacon?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": true
+        },
+        {
+          "id": "48361c5d-03b9-4c67-be38-68f48f598979",
+          "required": true,
+          "dataType": "@sauce",
+          "name": "sauce",
+          "value": "$sauce",
+          "prompts": [
+            "what sauce you want? Italian or simple",
+            "italian sauce or simple sauce??"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": true
+        },
+        {
+          "id": "802cb08c-276a-4b79-ba3b-182fd8f7e90a",
+          "required": true,
+          "dataType": "@sys.address",
+          "name": "address",
+          "value": "$address",
+          "prompts": [
+            "tell us your address?",
+            "where the pizza should be delivered?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": true
+        },
+        {
+          "id": "90c901b5-4edc-488d-86cd-62490ef49de0",
+          "required": true,
+          "dataType": "@sys.phone-number",
+          "name": "phone",
+          "value": "$phone",
+          "prompts": [
+            "your contact number?"
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": true
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "condition": "",
+          "speech": "Great! A $size $type pizza with extra $topping on $sauce sauce and $crust crust on the way to $address.original. Thanks you !"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "e6df9548-3cc2-4001-ad9f-3be72a443ef3",
+      "data": [
+        {
+          "text": "pizza",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "203ac587-7013-4e6d-8d23-d9e3427afa33",
+      "data": [
+        {
+          "text": "order",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "cde2eb58-b7dd-4dd9-94b3-31b6d22d74b9",
+      "data": [
+        {
+          "text": "i want to order",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "70a89cb5-ab4a-4e7f-b3ab-18b2d0189505",
+      "data": [
+        {
+          "text": "take my order",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "06847a30-2f99-4981-b13b-1a2f2d51f066",
+      "data": [
+        {
+          "text": "@type:type @size:size pizza with @crust:crust crust extra @topping:topping and @sauce:sauce sauce.  at @sys.address:address, contact - @phone:phone",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "cc49aca9-d486-445f-a6df-d905d6921ba8",
+      "data": [
+        {
+          "text": "@type:type @size:size pizza with @crust:crust crust extra @topping:topping and @sauce:sauce sauce. my address is @sys.address:address, contact - @phone:phone",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "1dffbb95-87a3-4266-ab4a-5ca5891af29d",
+      "data": [
+        {
+          "text": "please deliver a @type:type @size:size pizza with @crust:crust crust extra @topping:topping and @sauce:sauce sauce.  to @sys.address:address, contact - @phone:phone",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "66e492a8-a681-4904-a922-50f89e39a773",
+      "data": [
+        {
+          "text": "i need @type:type @size:size pizza with @crust:crust crust extra @topping:topping and @sauce:sauce sauce.  to @sys.address:address, contact- @phone:phone",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "0b9fafd9-87d8-4d7b-9362-f6e8947924e2",
+      "data": [
+        {
+          "text": "hi",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "a595082a-5c47-435d-a3c6-c2a5b95db0c2",
+      "data": [
+        {
+          "text": "i need @type:type pizza delivered to @sys.address:address",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "6a9a08a4-f81b-4edc-9579-0de70e654221",
+      "data": [
+        {
+          "text": "order a @type:type pizza with @crust:crust crust and @sauce:sauce",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "297ee08d-ff55-4c98-b031-f768f8801e70",
+      "data": [
+        {
+          "text": "@size:size  pizza with @topping:topping and @crust:crust",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "9a06fcfd-d345-4752-8ad4-9527b1995ee2",
+      "data": [
+        {
+          "text": "I want to order a pizza",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}

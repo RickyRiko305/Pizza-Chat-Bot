@@ -1,0 +1,26 @@
+{
+  "id": "1f37d458-9408-4b1c-93e9-4dfad0f86e9d",
+  "name": "type",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "veg",
+      "synonyms": [
+        "veg",
+        "vegetarian"
+      ]
+    },
+    {
+      "value": "non-veg",
+      "synonyms": [
+        "non-veg",
+        "non veg",
+        "non vegetarian"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false,
+  "isRegexp": false
+}
