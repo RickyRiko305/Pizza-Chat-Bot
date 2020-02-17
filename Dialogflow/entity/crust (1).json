@@ -1,0 +1,23 @@
+{
+  "id": "111e325e-c3f0-487b-ba4b-f2a3d6b07baf",
+  "name": "crust",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "thin",
+      "synonyms": [
+        "thin"
+      ]
+    },
+    {
+      "value": "thick",
+      "synonyms": [
+        "thick"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false,
+  "isRegexp": false
+}

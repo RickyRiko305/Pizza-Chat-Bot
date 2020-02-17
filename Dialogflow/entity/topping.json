@@ -1,0 +1,41 @@
+{
+  "id": "87ce1087-d6c3-42e6-8a7f-a335df49f11f",
+  "name": "topping",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "onions",
+      "synonyms": [
+        "onions"
+      ]
+    },
+    {
+      "value": "Sausage",
+      "synonyms": [
+        "Sausage"
+      ]
+    },
+    {
+      "value": "Mushrooms",
+      "synonyms": [
+        "Mushrooms"
+      ]
+    },
+    {
+      "value": "olives",
+      "synonyms": [
+        "olives"
+      ]
+    },
+    {
+      "value": "Bacon",
+      "synonyms": [
+        "Bacon"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false,
+  "isRegexp": false
+}

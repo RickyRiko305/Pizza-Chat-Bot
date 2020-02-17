@@ -1,0 +1,91 @@
+{
+  "id": "d5575264-ad48-421c-bfe0-651a634a37cf",
+  "name": "Status",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "05ff1f32-92d2-412f-9f89-cf3444d025f2",
+          "required": true,
+          "dataType": "@sys.phone-number",
+          "name": "phone",
+          "value": "$phone",
+          "prompts": [
+            "Enter your given contact number."
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "31e56c18-51cf-49fa-b440-92a683be22c3",
+      "data": [
+        {
+          "text": "status",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "38766677-3e42-4070-91a5-c3de49530396",
+      "data": [
+        {
+          "text": "status of my order",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "11fc41c0-b398-4bf8-8faa-75b93a520257",
+      "data": [
+        {
+          "text": "my order status",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}
