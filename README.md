@@ -6,6 +6,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+I have deployed the pizza chat bot in heroku, here is the link: https://chat-bot2020.herokuapp.com/
+
+For this I have installed `express` and added a file `server.js`. In `package.json` changed start to `node server.js`, added `postinstall` and `engine` in which I added `node` and `npm` versions.
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
